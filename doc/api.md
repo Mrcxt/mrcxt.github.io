@@ -1,0 +1,11 @@
+- GET https://api.github.com/users/:username 获取个人用户信息
+- GET https://api.github.com/users/:username/repos 获取当前用户所有的仓库
+- GET https://api.github.com/repos/:username/:repos/labels 获取某个仓库下的所有标签
+- GET https://api.github.com/repos/:username/:repos/issues 获取某个仓库下的所有issues
+- GET https://api.github.com/repos/:username/:repos/issues?state=状态 获取issues状态，open打开，close关闭。
+- GET https://api.github.com/repos/:username/:repos/issues?labels=标签名获取指定标签的所有issues。
+- GET https://api.github.com/repos/:username/:repos/issues?page=页数&per_page=每页包含数量 分页功能，获取指定的issues数量。
+- GET https://api.github.com/repos/:username/:repos/issues/: issue_number根据issues的 number获取详情
+- GET https://api.github.com/repos/:username/:repos/contents/:path 获取一个原始文件的内容。我的blog主要是获取md文件的，在请求头Request Headers上我加上了这一句Accept:application/vnd.github.VERSION.html就能返回可直接渲染的html文本了。
+- GET https://api.github.com/repos/:owner/:repo/issues/:number/comments 获取指定的issues下的所有的评论
+- 

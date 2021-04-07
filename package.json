@@ -1,0 +1,33 @@
+{
+    "name": "orange_blog",
+    "version": "0.0.1",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "serve": "vite preview",
+        "publish": "node script/publish.js",
+        "deploy": "bash bin/deploy.sh",
+        "release": "standard-version"
+    },
+    "dependencies": {
+        "ant-design-vue": "^2.1.2",
+        "axios": "^0.21.1",
+        "dayjs": "^1.10.4",
+        "github-markdown-css": "^4.0.0",
+        "normalize.css": "^8.0.1",
+        "randomcolor": "^0.6.2",
+        "timeago.js": "^4.0.2",
+        "vant": "^3.0.11",
+        "vue": "^3.0.5",
+        "vue-router": "4",
+        "vuex": "^4.0.0"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-vue": "^1.2.1",
+        "@vue/compiler-sfc": "^3.0.5",
+        "gh-pages": "^3.1.0",
+        "less": "^4.1.1",
+        "vite": "^2.1.5",
+        "vite-plugin-imp": "^2.0.5"
+    }
+}
