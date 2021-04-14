@@ -18,13 +18,12 @@
 	import { useRouter } from "vue-router";
 	import { useStore } from "vuex";
 	import { computed } from "vue";
-	import { Image } from "vant";
 
 	const store = useStore();
 	const router = useRouter();
 	const userInfo = computed(() => store.state.userInfo);
 	const routerPath = computed(() => router.options.routes[0].children);
-	console.log(routerPath);
+
 </script>
 
 <style lang="less" scoped>

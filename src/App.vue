@@ -1,6 +1,7 @@
 <template>
 	<router-view></router-view>
 	<Theme />
+	<a-back-top />
 </template>
 
 <script setup>

@@ -857,6 +857,11 @@ hash-sum@^2.0.0:
   resolved "http://artifactory.intra.xiaojukeji.com:80/artifactory/api/npm/npm/hash-sum/download/hash-sum-2.0.0.tgz#81d01bb5de8ea4a214ad5d6ead1b523460b0b45a"
   integrity sha1-gdAbtd6OpKIUrV1urRtSNGCwtFo=
 
+highlight.js@^10.7.2:
+  version "10.7.2"
+  resolved "http://artifactory.intra.xiaojukeji.com:80/artifactory/api/npm/npm/highlight.js/download/highlight.js-10.7.2.tgz#89319b861edc66c48854ed1e6da21ea89f847360"
+  integrity sha1-iTGbhh7cZsSIVO0ebaIeqJ+Ec2A=
+
 humanize-url@^1.0.0:
   version "1.0.1"
   resolved "http://artifactory.intra.xiaojukeji.com:80/artifactory/api/npm/npm/humanize-url/download/humanize-url-1.0.1.tgz#f4ab99e0d288174ca4e1e50407c55fbae464efff"
@@ -1053,6 +1058,11 @@ make-dir@^3.0.2:
   integrity sha1-QV6WcEazp/HRhSd9hKpYIDcmoT8=
   dependencies:
     semver "^6.0.0"
+
+marked@^2.0.1:
+  version "2.0.1"
+  resolved "http://artifactory.intra.xiaojukeji.com:80/artifactory/api/npm/npm/marked/download/marked-2.0.1.tgz#5e7ed7009bfa5c95182e4eb696f85e948cefcee3"
+  integrity sha1-Xn7XAJv6XJUYLk62lvhelIzvzuM=
 
 merge-source-map@^1.1.0:
   version "1.1.0"
