@@ -1,1 +1,0 @@
-import"./index.96d30f5e.js";import{_ as a}from"./write.d4504873.js";import{f as s,g as o,k as t,b as e,e as r,o as d}from"./vendor.8499063d.js";import"./randomColor.05cf2479.js";const c=t();e("data-v-4aca5882");const i={class:"write"};r();const p={expose:[],setup:t=>c(((t,e)=>(d(),s("div",i,[o(a,{year:""})])))),__scopeId:"data-v-4aca5882"};export default p;

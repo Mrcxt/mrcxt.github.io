@@ -1,0 +1,1 @@
+import{c as a,p as s,a as e,o}from"./vendor.5f5ac7ae.js";s("data-v-67e74728");const t={class:"404"};e();const c={expose:[],setup:s=>(s,e)=>(o(),a("div",t," NOT FOUND ")),__scopeId:"data-v-67e74728"};export default c;

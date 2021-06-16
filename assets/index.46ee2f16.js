@@ -1,0 +1,1 @@
+import{c as a,f as s,p as o,d as t,a as c,b as e,o as d}from"./vendor.5f5ac7ae.js";const n=s();o("data-v-0b492cc9");const r=t("div",{class:"about"},null,-1);c();const p={expose:[],setup:s=>(s,o)=>{const t=e("a-skeleton");return d(),a(t,{active:"",paragraph:{rows:3},loading:!0},{default:n((()=>[r])),_:1})},__scopeId:"data-v-0b492cc9"};export default p;
