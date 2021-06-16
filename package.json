@@ -1,5 +1,5 @@
 {
-    "name": "orange_blog",
+    "name": "cactus_blog",
     "version": "0.0.1",
     "scripts": {
         "dev": "vite",
@@ -10,25 +10,29 @@
         "release": "standard-version"
     },
     "dependencies": {
-        "ant-design-vue": "^2.1.2",
+        "@ant-design/icons-vue": "^6.0.1",
+        "ant-design-vue": "2.1.6",
         "axios": "^0.21.1",
-        "dayjs": "^1.10.4",
-        "github-markdown-css": "^4.0.0",
+        "date-fns": "^2.22.1",
+        "highlight.js": "^11.0.1",
+        "markdown-it": "^12.0.6",
+        "marked": "^2.0.7",
         "normalize.css": "^8.0.1",
         "randomcolor": "^0.6.2",
         "timeago.js": "^4.0.2",
-        "vant": "^3.0.11",
-        "vue": "^3.0.5",
-        "vue-router": "4",
-        "vuex": "^4.0.0"
+        "vue": "^3.1.1",
+        "vue-router": "^4.0.8",
+        "vuex": "^4.0.1"
     },
     "devDependencies": {
-        "@vitejs/plugin-vue": "^1.2.1",
+        "@vitejs/plugin-vue": "^1.2.3",
         "@vue/compiler-sfc": "^3.0.5",
+        "autoprefixer": "^10.2.6",
         "gh-pages": "^3.1.0",
-        "highlight.js": "^10.7.2",
         "less": "^4.1.1",
-        "marked": "^2.0.1",
+        "postcss": "^8.3.4",
+        "rollup-plugin-visualizer": "^5.5.0",
+        "tailwindcss": "^2.1.4",
         "vite": "^2.1.5",
         "vite-plugin-imp": "^2.0.5"
     }

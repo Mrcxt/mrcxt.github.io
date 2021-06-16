@@ -2,6 +2,7 @@ import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import vitePluginImp from "vite-plugin-imp";
 const { resolve } = require("path");
+import { visualizer } from "rollup-plugin-visualizer";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -11,20 +12,31 @@ export default defineConfig({
       { find: "~", replacement: resolve(__dirname) },
     ],
   },
+  build: {
+    rollupOptions: {
+      plugins: [
+        visualizer({
+          open: true,
+          gzipSize: true,
+          brotliSize: true,
+        }),
+      ],
+    },
+  },
   plugins: [
     vue(),
     vitePluginImp({
       libList: [
-        {
-          libName: "vant",
-          style: (name) => {
-            if (/CompWithoutStyleFile/i.test(name)) {
-              // This will not import any style file
-              return false;
-            }
-            return `vant/es/${name}/index.css`;
-          },
-        },
+        // {
+        //   libName: "vant",
+        //   style: (name) => {
+        //     if (/CompWithoutStyleFile/i.test(name)) {
+        //       // This will not import any style file
+        //       return false;
+        //     }
+        //     return `vant/es/${name}/index.css`;
+        //   },
+        // },
         {
           libName: "ant-design-vue",
           style(name) {

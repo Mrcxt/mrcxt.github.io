@@ -5,7 +5,6 @@
 </template>
 
 <script setup>
-	import dayjs, { isSameYear } from "@/util/dayjs";
 	import { useStore } from "vuex";
 	import { computed } from "vue";
 	import Write from "@/components/write.vue";

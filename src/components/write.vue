@@ -5,9 +5,9 @@
 		</div>
 		<ul class="article__list">
 			<li v-for="item in repoList.slice(0,max)" :key="item">
-				<h3 v-if="year && showYear(item.created_at)" class="year">{{dayjs(item.created_at).format('YYYY')}}</h3>
+				<h3 v-if="year && showYear(new Date(item.created_at))" class="year">{{format(new Date(item.created_at),'yyyy')}}</h3>
 				<div class="article__group">
-					<div class="article--time">{{dayjs(item.created_at).format('YYYY-MM-DD')}}</div>
+					<div class="article--time">{{format(new Date(item.created_at),'yyyy-MM-dd')}}</div>
 					<router-link class="article--title ellipsis" :to="{name:'post',params:{id:item.number}}">
 						<span>{{item.title}}</span>
 					</router-link>
@@ -19,7 +19,8 @@
 </template>
 
 <script setup>
-	import dayjs, { isSameYear } from "@/util/dayjs";
+	import { format, isSameYear } from "date-fns";
+
 	import { useStore } from "vuex";
 	import { getUserInfo, getIssues } from "@/api";
 	import { computed, defineProps, ref, watch } from "vue";
@@ -53,6 +54,7 @@
 	const showYear = (() => {
 		let flagYear = null;
 		return (time) => {
+			time = new Date(time);
 			if (!flagYear) {
 				flagYear = time;
 				return true;

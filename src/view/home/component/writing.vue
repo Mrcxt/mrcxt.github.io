@@ -7,7 +7,6 @@
 
 <script setup>
 	import Write from "@/components/write.vue";
-	import dayjs from "@/util/dayjs";
 	import { useStore } from "vuex";
 	import { computed } from "vue";
 

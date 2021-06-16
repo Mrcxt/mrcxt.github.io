@@ -1,7 +1,7 @@
 <template>
 	<div class="layout">
 		<Header />
-		<div class="main">
+		<div class="p-5 main-container">
 			<router-view></router-view>
 		</div>
 		<Footer />
@@ -17,7 +17,7 @@
 	.layout {
 		display: flex;
 		flex-direction: column;
-		.main {
+		.main-container {
 			flex: auto;
 		}
 	}

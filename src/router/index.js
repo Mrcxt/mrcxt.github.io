@@ -31,6 +31,11 @@ const router = createRouter({
           name: "about",
           component: () => import("@/view/about/index.vue"),
         },
+        // {
+        //   path: "post/:id",
+        //   name: "post",
+        //   component: () => import("@/view/post/index.vue"),
+        // },
       ],
     },
     {
@@ -44,6 +49,14 @@ const router = createRouter({
       component: () => import("@/view/notFound/index.vue"),
     },
   ],
+  scrollBehavior(to, from, savedPosition) {
+    if (to.hash) {
+      return {
+        el: to.hash,
+        behavior: "smooth",
+      };
+    }
+  },
 });
 
 export default router;

@@ -1,14 +1,9 @@
 <template>
 	<router-view></router-view>
-	<Theme />
-	<a-back-top />
+	<a-back-top class="hidden backtop md:block" />
 </template>
 
 <script setup>
-	// css
-	import "normalize.css";
-	import "./style/reset.less";
-	import "./style/base.less";
 	//
 	import Header from "./components/header.vue";
 	import Footer from "./components/footer.vue";
@@ -29,6 +24,7 @@
 		width: 100%;
 		height: 100%;
 		display: flex;
+		// background-color: #f4f5f5;
 	}
 	#app {
 		font-family: var(--base-font-family);
@@ -39,14 +35,20 @@
 		font-size: 14px;
 		color: var(--text-color);
 		flex: auto;
-		max-width: 768px;
+		max-width: 960px;
+		width: 100%;
 		margin: 0 auto;
 		line-height: 1.725;
 		text-rendering: geometricPrecision;
 		display: flex;
-		padding: 0 20px;
 		& > * {
-			flex: auto;
+			flex: 1;
+			width: 100%;
+		}
+		.backtop {
+			width: auto;
+			right: 15px;
+			bottom: 25px;
 		}
 	}
 </style>

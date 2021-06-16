@@ -2,10 +2,10 @@ import axios from "axios";
 import config from "~/github.config";
 const { token } = config;
 
-const axiosInstance = axios.create({
+const request = axios.create({
   baseURL: "https://api.github.com",
   headers: {
-    Accept: "application/vnd.github.v3.html",
+    // Accept: "application/vnd.github.v3.html",
     Authorization: `token ${window.atob(token)}`,
   },
   withCredentials: false, //是否携带cookie
@@ -13,7 +13,7 @@ const axiosInstance = axios.create({
 });
 
 //
-axiosInstance.interceptors.request.use(
+request.interceptors.request.use(
   (config) => {
     return config;
   },
@@ -23,7 +23,7 @@ axiosInstance.interceptors.request.use(
 );
 
 //
-axiosInstance.interceptors.response.use(
+request.interceptors.response.use(
   (res) => {
     if (res.status === 200) {
       return res.data;
@@ -47,18 +47,18 @@ axiosInstance.interceptors.response.use(
 
 export default {
   get(url, params = {}) {
-    return axiosInstance.get(url, {
+    return request.get(url, {
       params,
     });
   },
   post(url, data, config) {
-    return axiosInstance.post(url, data, config);
+    return request.post(url, data, config);
   },
   put(url, data) {
-    return axiosInstance.put(url, data);
+    return request.put(url, data);
   },
   delete(url, params = {}) {
-    return axiosInstance.delete(url, {
+    return request.delete(url, {
       params,
     });
   },
