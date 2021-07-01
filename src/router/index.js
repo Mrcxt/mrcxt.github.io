@@ -31,17 +31,18 @@ const router = createRouter({
           name: "about",
           component: () => import("@/view/about/index.vue"),
         },
-        // {
-        //   path: "post/:id",
-        //   name: "post",
-        //   component: () => import("@/view/post/index.vue"),
-        // },
       ],
     },
     {
-      path: "/post/:id",
-      name: "post",
-      component: () => import("@/view/post/index.vue"),
+      path: "/post",
+      component: () => import("@/view/layout/index.vue"),
+      children: [
+        {
+          path: ":id",
+          name: "post",
+          component: () => import("@/view/post/index.vue"),
+        },
+      ],
     },
     {
       path: "/:catchAll(.*)",

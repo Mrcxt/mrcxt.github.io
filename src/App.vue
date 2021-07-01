@@ -4,10 +4,6 @@
 </template>
 
 <script setup>
-	//
-	import Header from "./components/header.vue";
-	import Footer from "./components/footer.vue";
-	import Theme from "./components/theme.vue";
 	import { getUserInfo, getIssues } from "@/api";
 	import { useStore } from "vuex";
 

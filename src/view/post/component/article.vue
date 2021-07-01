@@ -15,9 +15,8 @@
 	import MarkdownBody from "./markdownBody.vue";
 	import Meta from "./meta.vue";
 
-	import { reactive, toRefs, computed } from "vue";
+	import { reactive, toRefs, computed, watch } from "vue";
 	import { format as timeago } from "timeago.js";
-	import { format } from "date-fns";
 
 	export default {
 		components: {
@@ -32,10 +31,10 @@
 		},
 		setup(props) {
 			//
-
 			const updated_time = computed(() =>
 				timeago(props.post_res.updated_at, "zh_CN").replace(/\s*/g, "")
 			);
+
 			return {
 				updated_time,
 			};

@@ -13,7 +13,7 @@ import {
   Collapse,
 } from "ant-design-vue";
 
-import { version } from "../package.json";
+import { version } from "~/package.json";
 console.log("version:", version);
 
 // css

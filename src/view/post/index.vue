@@ -1,17 +1,13 @@
 <template>
 	<div class="post">
-		<Header />
 		<div class="p-5 view">
 			<Article :post_res="post_res" />
 			<Sidebar :post_res="post_res" />
 		</div>
-		<Footer />
 	</div>
 </template>
 
 <script setup>
-	import Footer from "@/components/footer.vue";
-	import Header from "@/components/header.vue";
 	import Article from "./component/article.vue";
 	import Sidebar from "./component/sidebar.vue";
 
@@ -32,8 +28,8 @@
 
 <style lang="less" scoped>
 	.post {
-		display: flex;
-		flex-direction: column;
+		// display: flex;
+		// flex-direction: column;
 		.view {
 			display: flex;
 			flex: 1;

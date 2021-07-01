@@ -1,5 +1,5 @@
 import http from "./axios";
-import config from "~/github.config";
+import config from "~/cactus.config";
 
 const { username, repos } = config;
 const { get } = http;

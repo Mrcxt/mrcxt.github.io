@@ -1,5 +1,5 @@
 import axios from "axios";
-import config from "~/github.config";
+import config from "~/cactus.config";
 const { token } = config;
 
 const request = axios.create({

@@ -1,12 +1,15 @@
 <template>
-	<a-skeleton active :paragraph="{ rows: 3 }" :loading="true">
-		<div class="about">
-		</div>
-	</a-skeleton>
+	<div class="about">
+		<!-- <a-skeleton active :paragraph="{ rows: 3 }" :loading="true"></a-skeleton> -->
+		<!-- <div v-html="about"></div> -->
+		<!-- <About /> -->
+	</div>
 </template>
 
 <script setup>
-	import { ref } from "vue";
+	import About from "@/md/about.md";
+
+	console.log(About);
 </script>
 
 <style lang="less" scoped>
