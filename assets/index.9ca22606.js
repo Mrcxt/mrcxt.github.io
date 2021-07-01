@@ -1,0 +1,1 @@
+import{c as n,p as o,h as s,o as c}from"./vendor.6c522447.js";o("data-v-72c52df7");const e={class:"about"};s();const a={expose:[],setup:o=>(console.log("# 关于我\n\n## 标题二啊\n\np啊啊啊啊啊啊啊啊多安达市大所大多\n\n\n> 引用了\n\n`code`\n\n```js\nconst pre = (code)=>{\n  return code;\n}\n```"),(o,s)=>(c(),n("div",e))),__scopeId:"data-v-72c52df7"};export default a;
